@@ -25,7 +25,7 @@ import WishList from './components/WishList/WishList';
 
 
 const router = createBrowserRouter([
-  {path:'',element:<MasterLayout/>,children:[
+  {path:'E-commerce',element:<MasterLayout/>,children:[
     {path:'',element:<ProtectedRoute><Home/></ProtectedRoute>},
     {path:'home',element:<ProtectedRoute><Home/></ProtectedRoute>},
     {path:'cart',element:<ProtectedRoute><Cart/></ProtectedRoute>},
