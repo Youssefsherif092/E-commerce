@@ -67,7 +67,7 @@ export default function Navbar() {
                 <i className="fa-brands mx-3 fa-linkedin"></i>
               </li>
           <li className="nav-item">
-            <Link to='E-commerce/cart'>
+            <Link to='cart'>
               <i className="fa-solid fa-cart-shopping text-main"></i>
               <span className='badge bg-main text-light'>{cartNumber}</span>
             </Link>
