@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     {path:'home',element:<ProtectedRoute><Home/></ProtectedRoute>},
     {path:'cart',element:<ProtectedRoute><Cart/></ProtectedRoute>},
     {path:'checkout',element:<ProtectedRoute><CheckOut/></ProtectedRoute>},
-    {path:'allorders',element:<ProtectedRoute><Allorders/></ProtectedRoute>},
+    {path:'E-commerce/allorders',element:<ProtectedRoute><Allorders/></ProtectedRoute>},
     {path:'details/:id',element:<ProtectedRoute><Details/></ProtectedRoute>},
     {path:'wishlist',element:<ProtectedRoute><WishList/></ProtectedRoute>},
     {path:'signin',element:<Signin/>},
