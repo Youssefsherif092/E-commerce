@@ -25,12 +25,12 @@ import WishList from './components/WishList/WishList';
 
 
 const router = createBrowserRouter([
-  {path:'',element:<MasterLayout/>,children:[
+  {path:'E-commerce/',element:<MasterLayout/>,children:[
     {path:'',element:<ProtectedRoute><Home/></ProtectedRoute>},
     {path:'home',element:<ProtectedRoute><Home/></ProtectedRoute>},
     {path:'cart',element:<ProtectedRoute><Cart/></ProtectedRoute>},
     {path:'checkout',element:<ProtectedRoute><CheckOut/></ProtectedRoute>},
-    {path:'E-commerce/allorders',element:<ProtectedRoute><Allorders/></ProtectedRoute>},
+    {path:'allorders',element:<ProtectedRoute><Allorders/></ProtectedRoute>},
     {path:'details/:id',element:<ProtectedRoute><Details/></ProtectedRoute>},
     {path:'wishlist',element:<ProtectedRoute><WishList/></ProtectedRoute>},
     {path:'signin',element:<Signin/>},
