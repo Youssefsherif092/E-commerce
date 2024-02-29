@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 import MasterLayout from './components/MasterLayout/MasterLayout';
 import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
@@ -24,8 +24,8 @@ import SetNewPass from './components/SetNewPass/SetNewPass';
 import WishList from './components/WishList/WishList';
 
 
-const router = createBrowserRouter([
-  {path:'E-commerce/',element:<MasterLayout/>,children:[
+const router = createHashRouter([
+  {path:'',element:<MasterLayout/>,children:[
     {path:'',element:<ProtectedRoute><Home/></ProtectedRoute>},
     {path:'home',element:<ProtectedRoute><Home/></ProtectedRoute>},
     {path:'cart',element:<ProtectedRoute><Cart/></ProtectedRoute>},
