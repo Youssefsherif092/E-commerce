@@ -40,9 +40,9 @@ export default function CartContextProvider(props){
         }
         )
     }
-    let url = `https://youssefsherif092.github.io/E-commerce/#`
+
     function checkoutSession(id,formData){
-        return axios.post(`${baseURL}/api/v1/orders/checkout-session/${id}?url=${url}`,
+        return axios.post(`${baseURL}/api/v1/orders/checkout-session/${id}?url=http://localhost:3000`,
         {
             shippingAddress:formData
         },
