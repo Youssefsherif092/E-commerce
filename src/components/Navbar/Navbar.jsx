@@ -28,7 +28,7 @@ export default function Navbar() {
       className="navbar navbar-expand-sm navbar-light bg-light fixed-top "
     >
       <div className="container">
-        <Link className="navbar-brand" to="/"><i className="fa-solid text-main fa-cart-shopping"></i><span className='fw-bold '>FreshCart</span></Link>
+        <Link className="navbar-brand" to="E-commerce/"><i className="fa-solid text-main fa-cart-shopping"></i><span className='fw-bold '>FreshCart</span></Link>
         <button
           className="navbar-toggler d-lg-none"
           type="button"
@@ -43,19 +43,19 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="collapsibleNavId">
           {userToken !== null ? <> <ul className="navbar-nav me-auto mt-2 mt-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="home">Home</Link>
+                <Link className="nav-link" to="E-commerce/home">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="category">Categories</Link>
+                <Link className="nav-link" to="E-commerce/category">Categories</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="brands">Brands</Link>
+                <Link className="nav-link" to="E-commerce/brands">Brands</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="product">Products</Link>
+                <Link className="nav-link" to="E-commerce/product">Products</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="wishlist">Wishlist</Link>
+                <Link className="nav-link" to="E-commerce/wishlist">Wishlist</Link>
               </li>
 
           </ul>
@@ -80,10 +80,10 @@ export default function Navbar() {
            : <div className="collapse navbar-collapse" id="collapsibleNavId">
           <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="signup">Signup</Link>
+                <Link className="nav-link" to="E-commerce/signup">Signup</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="signin">Login</Link>
+                <Link className="nav-link" to="E-commerce/signin">Login</Link>
               </li>
           </ul>
         </div>}
